@@ -1,7 +1,7 @@
 <template>
     <section >
         <div class="container  section-content" id="projects">
-            <h3 class="heading">Projects</h3>
+            <h3 class="heading"> Featured Projects</h3>
             <div class="row">
                
                 <div class="col-md-9">
