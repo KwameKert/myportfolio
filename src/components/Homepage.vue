@@ -46,4 +46,31 @@ export default {
 
   }
 
+  @media only screen and (max-width: 600px) {
+
+ .nice{
+      margin-top: 100px;
+  }
+
+   .name{
+      font-size:4em;
+      font-weight: 800;
+      letter-spacing: 2px;
+      padding-left: 0px;
+  }
+
+  .headline{
+    font-size:2em;
+    font-weight: 500;
+    color: #97b0ca;
+    padding-left: 0px;
+  }
+      .intro, .headline{
+        width: 100%;
+      }
+
+     
+
+  }
+
 </style>
