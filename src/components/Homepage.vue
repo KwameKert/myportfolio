@@ -1,0 +1,49 @@
+<template>
+      <section  class="nice">
+        <div class="container ">
+            <h5>Hi, my name is</h5>
+            <h2 class="name">Kertice Asante</h2>
+            <h4 class="headline">I create things for the web</h4>
+            <p class=" intro  mb-3" >Im a software engineer living in Accra, Ghana builing applications to solve  problems with  the aim of making the world a better place.</p>
+            
+            <button  class="btn btn-outline-primary">Connect with me</button>
+        </div>
+    </section>
+</template>
+
+
+<script>
+export default {
+    name: 'Homepage'
+}
+</script>
+
+
+<style >
+  .nice{
+      margin-top: 200px;
+  }
+
+  .name{
+      font-size:5em;
+      font-weight: 900;
+      letter-spacing: 4px;
+      padding-left: 0px;
+  }
+
+  .headline{
+    font-size:4em;
+    font-weight: 700;
+    color: #97b0ca;
+    padding-left: 0px;
+  }
+
+  .intro{
+    margin-top: 50px;
+    width: 50%;
+    text-align: justify;
+    color: #b7babd;
+
+  }
+
+</style>
