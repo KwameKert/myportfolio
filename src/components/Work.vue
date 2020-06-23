@@ -1,6 +1,7 @@
 <template>
 
-    <section>
+    <section >
+    <div  id="work" style="margin-top: 100px"></div>
         <div class="container section-content">
             <h3 class="heading">Work Experience</h3>
             <div class="row">

@@ -1,6 +1,6 @@
-<template>
-       <section id="about">
-        <div class="container section-content">
+<template >
+       <section>
+        <div class="container section-content" id="about">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <h3 class="heading">About me</h3>
@@ -63,7 +63,7 @@ export default {
 
 <style>
 .section-content {
-    margin-top: 400px;
+    padding-top: 100px;
 }
 
 
