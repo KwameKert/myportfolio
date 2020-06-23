@@ -4,6 +4,7 @@
     <Homepage />
     <About />
     <Work />
+    <Projects />
     
   </div>
 </template>
@@ -12,6 +13,7 @@
 import Header from './components/Header.vue';
 import About from './components/About.vue';
 import Work from './components/Work.vue';
+import Projects from './components/Projects.vue';
 import Homepage from './components/Homepage.vue';
 
 export default {
@@ -20,7 +22,8 @@ export default {
     Header,
     Homepage,
     About,
-    Work
+    Work,
+    Projects
   }
 }
 </script>
@@ -39,5 +42,10 @@ body{
     min-height: 200vh;
     background-color:rgb(10, 25, 47);
 }
+
+.section-content {
+    padding-top: 100px;
+}
+
 
 </style>

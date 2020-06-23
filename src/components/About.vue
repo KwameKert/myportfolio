@@ -8,7 +8,17 @@
                      <p class="light-text">I love building things, most of them work on computers. Im very passionate about quality softwares and open source projects. I belive technolgy is one of the best things that happened to humans and it can be improved upon. </p>
                      <p class="light-text">During my third and fourth years in the university I did full-time internships with GTUC software unit and Seso Global. I have worked on challenging projects with different teams during my internships. </p>
                      <p class="light-text">Here are a few technologies I've been working with recently:</p>
-                     <div class="tech-stack">
+                 
+                </div>
+                <div class="col-md-6 text-center ">
+                    <img src="@/assets/img/profile.jpg" alt=""  class="mt-4 img-thumbnail profile-image" >
+                </div>
+            </div>
+
+                <div class="row">
+                         <div class="col-md-6 col-sm-12">
+
+                              <div class="tech-stack">
                         <ul>
                             <li class="stack-heading">Languages</li>
                             <li>Java</li>
@@ -43,12 +53,8 @@
                             <li>MySQL</li>
                         </ul>
                      </div>
-                     
-                </div>
-                <div class="col-md-6 text-center ">
-                    <img src="@/assets/img/profile.jpg" alt=""  class="mt-4 img-thumbnail profile-image" >
-                </div>
-            </div>
+                         </div>
+                     </div>
           
         </div>
     </section>
@@ -62,9 +68,6 @@ export default {
 </script>
 
 <style>
-.section-content {
-    padding-top: 100px;
-}
 
 
 .heading {
@@ -100,7 +103,11 @@ export default {
     height: 350px;
      width: 350px;
      opacity: 0.3;
+     transition: 0.3s;
    
+}
+.profile-image{
+    opacity: 1;
 }
 
 .tech-stack{

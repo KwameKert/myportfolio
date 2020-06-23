@@ -1,11 +1,10 @@
 <template>
 
     <section >
-    <div  id="work" style="margin-top: 100px"></div>
-        <div class="container section-content">
+        <div class="container section-content" id="work" >
             <h3 class="heading">Work Experience</h3>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-12">
                    
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="nav-link " id="v-pills-home-tab" data-toggle="pill" href="#seso" role="tab" aria-controls="v-pills-home" aria-selected="true" @click.prevent="setActive('seso')" :class="{ active: isActive('seso') }"  >Seso Global</a>
@@ -18,7 +17,7 @@
 
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-5">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade " id="seso" role="tabpanel" aria-labelledby="v-pills-home-tab" :class="{ 'active show': isActive('seso') }"  >
                                 <h4>Software Engineer (Intern) @Seso</h4>
