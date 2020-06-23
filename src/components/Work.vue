@@ -7,9 +7,11 @@
                 <div class="col-md-3">
                    
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#seso" role="tab" aria-controls="v-pills-home" aria-selected="true">Seso Global</a>
-                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#visual_insights" role="tab" aria-controls="v-pills-profile" aria-selected="false">Visual Insights</a>
-                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#gtuc_software" role="tab" aria-controls="v-pills-messages" aria-selected="false">GTUC Software Unit</a>
+                        <a class="nav-link " id="v-pills-home-tab" data-toggle="pill" href="#seso" role="tab" aria-controls="v-pills-home" aria-selected="true" @click.prevent="setActive('seso')" :class="{ active: isActive('seso') }"  >Seso Global</a>
+
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#visual_insights" role="tab" aria-controls="v-pills-profile" aria-selected="false" @click.prevent="setActive('visual_insights')" :class="{ active: isActive('visual_insights') }">Visual Insights</a>
+
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#gtuc_software" role="tab" aria-controls="v-pills-messages" aria-selected="false"  @click.prevent="setActive('gtuc_software')" :class="{ active: isActive('gtuc_software') }">GTUC Software Unit</a>
                       </div>
                      
 
@@ -17,8 +19,8 @@
 
                     <div class="col-md-6">
                         <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="seso" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                <h4>Full Stack Developer (Intern) @Seso</h4>
+                            <div class="tab-pane fade " id="seso" role="tabpanel" aria-labelledby="v-pills-home-tab" :class="{ 'active show': isActive('seso') }"  >
+                                <h4>Software Engineer (Intern) @Seso</h4>
                                 <p class="light-text">September 2019  - Present</p>
                                 <ul>
                                    
@@ -30,7 +32,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="tab-pane fade" id="visual_insights" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="tab-pane fade" id="visual_insights" role="tabpanel" aria-labelledby="v-pills-profile-tab" :class="{ 'active show': isActive('visual_insights') }" >
                                 <h4>Full Stack Developer (Remote) @Visual_Insights</h4>
                                 <p class="light-text">July 2019  - December 2019</p>
                                 <ul>
@@ -43,7 +45,7 @@
                                     
                                 </ul>
                             </div>
-                            <div class="tab-pane fade" id="gtuc_software" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <div class="tab-pane fade" id="gtuc_software" role="tabpanel" :class="{ 'active show': isActive('gtuc_software') }" >
                                 <h4>Full Stack Developer (Intern) @GTUC</h4>
                                 <p class="light-text">September 2018  - September 2019</p>
                                 <ul>
@@ -80,7 +82,33 @@
 
 <script>
 export default {
-    name: 'Work'
+    name: 'Work',
+      data(){
+        return {
+            activeItem: 'seso'
+        }
+    },
+    methods: {
+            changeMenu: function(){
+                this.isActive = !this.isActive;
+            },
+            isActive : function(menuItem) {
+                return this.activeItem === menuItem
+            },
+            setActive (menuItem) {
+                this.activeItem = menuItem
+            
+            }
+
+    }
+//   methods:{
+//   	// isActive : function(menuItem) {
+//     //   return this.activeItem === menuItem
+//     // },
+//     // setActive (menuItem) {
+//     //   this.activeItem = menuItem
+//     // }
+//   }
 }
 </script>
 

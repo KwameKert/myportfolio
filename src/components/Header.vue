@@ -52,10 +52,10 @@ export default {
     name: 'Header',
      created () {
     window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
+    },
+    destroyed () {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
     data(){
         return {
             isActive: false
