@@ -12,10 +12,10 @@
             </p>
             <a href="mailto:kwamekert@gmail.com" class="btn btn-outline-primary"><img src="@/assets/img/simplemail.svg" width="30px" height="30px" alt=""> &nbsp;&nbsp;<p class="m-2">Send me a hi.</p></a>
 
-            <a href="https://github.com/KwameKert" class="btn btn-outline-primary"> 
+            <a href="https://github.com/KwameKert" target="blank" class="btn btn-outline-primary"> 
             <img src="@/assets/img/github.svg" width="30px" height="30px" alt="">
             &nbsp;&nbsp;<p class="m-2"> Follow me </p></a>
-            <a href="https://www.linkedin.com/in/kertice-asante-aa4224173/" class="btn btn-outline-primary"> <img src="@/assets/img/linkedin.svg" alt="">  &nbsp;&nbsp; <p class="m-2">Add Connection</p></a>
+            <a href="https://www.linkedin.com/in/kertice-asante-aa4224173/" target="blank" class="btn btn-outline-primary"> <img src="@/assets/img/linkedin.svg" alt="">  &nbsp;&nbsp; <p class="m-2">Add Connection</p></a>
 
         </div>
         </section>
