@@ -16,8 +16,9 @@
 
      <header id="mobile-menu">
         <div id="menu-bar">
-             <a href="javascript:void()" class="logo">{ kc }</a>
-			<div id="menu" @click="changeMenu()" v-bind:class="{change: isActive}">
+            <div class="row">
+                <div class="col-2">
+                    <div id="menu" @click="changeMenu()" v-bind:class="{change: isActive}">
 				<div id="bar1" class="bar"></div>
 				<div id="bar2" class="bar"></div>
 				<div id="bar3" class="bar"></div>
@@ -32,6 +33,12 @@
             <li class="links"><a href="#">Contact</a></li>
             <li ><button  class="btn btn-outline-primary">Resume</button></li>
         </ul>
+                </div>
+                <div class="col-9">
+                    <a href="javascript:void()" class="logo" style="padding-top: 10px">{ kc }</a>
+                </div>
+            </div>
+			
 		</div>
         <div class="menu-bg" id="menu-bg" v-bind:class="{change: isActive}"></div>
     </header>
@@ -43,6 +50,12 @@
 <script>
 export default {
     name: 'Header',
+     created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
     data(){
         return {
             isActive: false
@@ -51,6 +64,10 @@ export default {
     methods: {
             changeMenu: function(){
                 this.isActive = !this.isActive;
+            },
+            handleScroll: function(){
+               var header = document.querySelector("header");
+               header.classList.toggle("sticky",window.scrollY > 0);
             }
     }
 }
@@ -131,6 +148,19 @@ li{
     background: #fff;
   }
 
+
+
+
+    .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #789fa5;
+    border-color:  #789fa5;
+}
+  .btn-outline-primary{
+    color: #789fa5;
+    border-color:   #789fa5;
+}
+
   header.sticky{
       padding: 5px 120px;
       background-color: rgb(10, 25, 47);;
@@ -142,20 +172,37 @@ li{
   header.sticky ul{
     padding-top: 20px;
   }
-    .btn-outline-primary:hover {
-    color: #fff;
-    background-color: #789fa5;
-    border-color:  #789fa5;
-}
-  .btn-outline-primary{
-    color: #789fa5;
-    border-color:   #789fa5;
-}
 
 @media only screen and (max-width: 600px) {
   /* body {
     background-color: lightblue;
   } */
+
+
+  header .logo {
+    position: absolute;
+    font-weight: 700;
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    padding-top: 15px;
+}
+ 
+    header.sticky{
+      padding: 5px 120px;
+      background-color: rgb(10, 25, 47);;
+      -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+      -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+      box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  }
+
+  header.sticky ul{
+    padding-top: 20px;
+  }
+
+
   #desktop-menu{
       display: none;
   }
@@ -198,21 +245,23 @@ li{
 }
 .nav{
 	padding: 0;
-	margin: 0 20px;
+    margin: 0 20px;
 	transition: 0.3s ease;
 	display: none;
 }
 .menu-bg, #menu-bar{
 	top: 0;
 	left: 0;
+    right: 0;
 	position: absolute;
+    background-color: rgb(10, 25, 47);;
 }
 .menu-bg{
 	z-index: 1;
 	width: 0;
 	height: 0;
 	margin: 30px 0 20px 20px;
-	background: radial-gradient(circle,#e94498,#b81568);
+	background:  rgb(10, 25, 47) !important;
 	border-radius: 50%;
 	transition: 0.3s ease;
 }

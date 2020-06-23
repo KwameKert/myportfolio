@@ -2,19 +2,22 @@
   <div >
     <Header />
     <Homepage />
+    <About />
     
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
+import About from './components/About.vue';
 import Homepage from './components/Homepage.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
-    Homepage
+    Homepage,
+    About
   }
 }
 </script>
@@ -33,6 +36,9 @@ body{
     min-height: 200vh;
     background-color:rgb(10, 25, 47);
 }
+
+ 
+
 
 
 </style>
