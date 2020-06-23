@@ -1,8 +1,8 @@
 <template>
-       <section>
+       <section id="about">
         <div class="container section-content">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12">
                     <h3 class="heading">About me</h3>
                     <p class="light-text">Hello! Im Kertice, a software engineer based in Accra, Ghana</p>
                      <p class="light-text">I love building things, most of them work on computers. Im very passionate about quality softwares and open source projects. I belive technolgy is one of the best things that happened to humans and it can be improved upon. </p>

@@ -5,7 +5,7 @@
         
              <a href="javascript:void()" class="logo">{ kc }</a>
         <ul>
-            <li class="links"><a href="#">About</a> </li>
+            <li class="links" ><a href="#about">About</a> </li>
             <li class="links"><a href="#">Experience</a></li>
             <li class="links"><a href="#">Projects</a></li>
             <li class="links"><a href="#">Contact</a></li>

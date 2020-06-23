@@ -3,6 +3,7 @@
     <Header />
     <Homepage />
     <About />
+    <Work />
     
   </div>
 </template>
@@ -10,6 +11,7 @@
 <script>
 import Header from './components/Header.vue';
 import About from './components/About.vue';
+import Work from './components/Work.vue';
 import Homepage from './components/Homepage.vue';
 
 export default {
@@ -17,7 +19,8 @@ export default {
   components: {
     Header,
     Homepage,
-    About
+    About,
+    Work
   }
 }
 </script>
