@@ -15,7 +15,7 @@
                 </div>
             </div>
 
-                <div class="row">
+                <div class="row mt-3">
                          <div class="col-md-6 col-sm-12">
 
                               <div class="tech-stack">

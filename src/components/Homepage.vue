@@ -6,7 +6,7 @@
             <h4 class="headline">I create things for the web</h4>
             <p class=" intro  mb-3" >Im a software engineer living in Accra, Ghana builing applications to solve  problems with  the aim of making the world a better place.</p>
             
-            <button  class="btn btn-outline-primary">Connect with me</button>
+            <a  href="mailto:kwamekert@gmail.com" class="btn btn-outline-primary">Connect with me</a>
         </div>
     </section>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div id="app">
     <Header />
     <Homepage />
     <About />
@@ -50,7 +50,7 @@ body{
 }
 
 .section-content {
-    padding-top: 100px;
+    padding-top: 110px;
 }
 
 

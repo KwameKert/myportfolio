@@ -53,10 +53,11 @@
                             <span class="languages">Express</span>  
 
                             <span class="languages">Mongo</span>   
-                                <span class="languages">Javascript</span>
+                                
                         </div>
 
                         <div class="mt-2">
+                            <span class="languages">Javascript</span>
                                 <span class="languages">Netlify</span>
                                 <span class="languages">Heroku</span>
 

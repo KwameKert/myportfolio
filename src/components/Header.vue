@@ -9,7 +9,7 @@
             <li class="links"><a href="#work">Experience</a></li>
             <li class="links"><a href="#projects">Projects</a></li>
             <li class="links"><a href="#contact">Contact</a></li>
-            <li ><button  class="btn btn-outline-primary">Resume</button></li>
+            <li ><a  href="../../../assets/cv.pdf" class="btn btn-outline-primary">Resume</a></li>
         </ul>
 
      </header>
@@ -27,10 +27,10 @@
 
             
         <ul class="nav" id="nav" v-bind:class="{change: isActive}">
-            <li class="links"><a href="#">About</a> </li>
-            <li class="links"><a href="#">Experience</a></li>
-            <li class="links"><a href="#">Projects</a></li>
-            <li class="links"><a href="#">Contact</a></li>
+            <li class="links"><a href="#about">About</a> </li>
+            <li class="links"><a href="#work">Experience</a></li>
+            <li class="links"><a href="#projects">Projects</a></li>
+            <li class="links"><a href="#contact">Contact</a></li>
             <li ><button  class="btn btn-outline-primary">Resume</button></li>
         </ul>
                 </div>
@@ -48,6 +48,8 @@
 
 
 <script>
+
+
 export default {
     name: 'Header',
      created () {
@@ -68,12 +70,16 @@ export default {
             handleScroll: function(){
                var header = document.querySelector("header");
                header.classList.toggle("sticky",window.scrollY > 0);
+            },
+            darkThemeSwitch(){
+               
             }
+            
     }
 }
 </script>
 
-<style >
+<style style="scss">
 
 #mobile-menu{
     display: none;
@@ -187,7 +193,7 @@ li{
     text-decoration: none;
     letter-spacing: 2px;
     transition: 0.6s;
-    padding-top: 15px;
+    margin-top: 5px;
 }
  
     header.sticky{
