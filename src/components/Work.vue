@@ -74,7 +74,7 @@
                     </div>
                 </div>
         </div>
-        <div style="margin-bottom: 500px"></div>
+        <div style="margin-bottom: 100px"></div>
     </section>
     
 </template>

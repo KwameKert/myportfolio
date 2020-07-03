@@ -4,9 +4,9 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <h3 class="heading">About me</h3>
-                    <p class="light-text">Hello! Im Kertice, a software engineer based in Accra, Ghana</p>
-                     <p class="light-text">I love building things, most of them work on computers. Im very passionate about quality softwares and open source projects. I belive technolgy is one of the best things that happened to humans and it can be improved upon. </p>
-                     <p class="light-text">During my third and fourth years in the university I did full-time internships with GTUC software unit and Seso Global. I have worked on challenging projects with different teams during my internships. </p>
+                    <p class="light-text">Hello! I am Kertice, a software engineer based in Accra, Ghana</p>
+                     <p class="light-text">I love building things, most of them work on computers. Im very passionate about quality software and open source projects. I believe technology is one of the best things that happened to humanity and it can be improved upon. </p>
+                     <p class="light-text">During my third and senior year in the university, I did full-time internships with Ghana Technology University College (GTUC) software unit and Seso Global. I have worked on challenging projects with different teams during my internships. </p>
                      <p class="light-text">Here are a few technologies I've been working with recently:</p>
                  
                 </div>
