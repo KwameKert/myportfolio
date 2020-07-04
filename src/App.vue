@@ -6,7 +6,7 @@
     <Work />
     <Projects />
     <contact />
-    <Footer />
+    <!-- <Footer /> -->
     
   </div>
 </template>
@@ -16,7 +16,7 @@ import Header from './components/Header.vue';
 import About from './components/About.vue';
 import Work from './components/Work.vue';
 import Projects from './components/Projects.vue';
-import Footer from './components/Footer.vue';
+// import Footer from './components/Footer.vue';
 import Homepage from './components/Homepage.vue';
 import Contact from './components/Contact.vue';
 
@@ -31,8 +31,8 @@ export default {
     About,
     Work,
     Projects,
-    Contact,
-    Footer
+    Contact
+    // Footer
   },
  
 }

@@ -5,11 +5,13 @@
     padding:0;
     box-sizing: border-box;
     color: #000000 !important;
-    background-color:#fff;
+   
 }
 
 body{
     min-height: 200vh;
+    background-image: url('../img/background.jpg') !important;
+   
    
 }
 
@@ -20,6 +22,10 @@ p{
 
 .section-content {
     padding-top: 110px;
+}
+
+header{
+    background-color:#fff;
 }
 
 

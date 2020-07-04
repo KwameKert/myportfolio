@@ -116,6 +116,8 @@ export default {
 }
 
 
+
+
 header{
     position: fixed;
     top: 0;
@@ -152,6 +154,14 @@ li{
 }
 
 
+header .logo {
+    text-decoration: none;
+}
+
+
+header .logo:hover {
+    color: white;
+}
 
 
 

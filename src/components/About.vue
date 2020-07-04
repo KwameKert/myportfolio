@@ -8,14 +8,7 @@
                      <p class="light-text">I love building things, most of them work on computers. I'm very passionate about quality software. I believe technology is one of the best things that happened to humanity and it can be improved upon. </p>
                      <p class="light-text">During my third and final year in the university, I did full-time internships with Ghana Technology University College (GTUC) software unit and Seso Global. I have worked on challenging projects with different teams during my internships. </p>
                      <p class="light-text">Here are a few technologies I've been working with recently:</p>
-                 
-                </div>
-                <div class="col-md-6 text-center ">
-                    <img src="@/assets/img/profile.jpg" alt=""  class="mt-4 img-thumbnail profile-image" >
-                </div>
-            </div>
-
-                <div class="row mt-3">
+                          <div class="row mt-3">
 
                     <div class="col-md-10 col-sm-12 stack pl-0">
                         <ul class="nav stack-pills mb-1" id="pills-tab" role="tablist">
@@ -98,6 +91,14 @@
                     </div>
             
                      </div>
+                 
+                </div>
+                <div class="col-md-6 text-center ">
+                    <img src="@/assets/img/profile.jpg" alt=""  class="mt-4 img-thumbnail profile-image" >
+                </div>
+            </div>
+
+           
           
         </div>
     </section>
