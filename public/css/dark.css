@@ -91,6 +91,30 @@ header.sticky ul{
   }
 
 
+  .social-buttons:hover {
+    color: #fff;
+    background-color: #0a192f ;
+    border-color: #789fa5;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .links:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 3px;
+        color:#b6bedc;
+        width: 0px;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+      }
+      .links:hover:after {
+        width: 100%;
+        background: #fff;
+      }
+}
 /* header.sticky{
     background-color: rgb(10, 25, 47);
 } */

@@ -18,26 +18,33 @@
      <header id="mobile-menu">
         <div id="menu-bar">
             <div class="row">
-                <div class="col-2">
-                    <div id="menu" @click="changeMenu()" v-bind:class="{change: isActive}">
+                <div class="col-3">
+                <div id="menu" @click="changeMenu()" v-bind:class="{change: isActive}">
 				<div id="bar1" class="bar"></div>
 				<div id="bar2" class="bar"></div>
 				<div id="bar3" class="bar"></div>
 			</div>
+                </div>
+                <div class="col-9">
+                      <a href="javascript:void()" class="logo" >{ kc }</a>
+                </div>
+            </div>
 
 
-            
+            <div class="row">
+                <div class="col-12 ">
         <ul class="nav" id="nav" v-bind:class="{change: isActive}">
             <li class="links"><a href="#about">About</a> </li>
             <li class="links"><a href="#work">Experience</a></li>
             <li class="links"><a href="#projects">Projects</a></li>
             <li class="links"><a href="#contact">Contact</a></li>
             <li ><button  class="btn btn-outline-primary">Resume</button></li>
+             <li><a @click="darkThemeSwitch" class="btn btn-primary">click</a></li>
         </ul>
                 </div>
-                <div class="col-9">
-                    <a href="javascript:void()" class="logo" style="padding-top: 10px">{ kc }</a>
-                </div>
+                <!-- <div class="col-9">
+                  
+                </div> -->
             </div>
 			
 		</div>
@@ -140,33 +147,10 @@ li{
 
 
 @media only screen and (max-width: 600px) {
-  /* body {
-    background-color: lightblue;
-  } */
-
-
-  header .logo {
-    position: absolute;
-    font-weight: 700;
-    color: #fff;
-    font-size: 2em;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.6s;
-    margin-top: 5px;
-}
  
-    header.sticky{
-      padding: 5px 120px;
-      background-color: rgb(10, 25, 47);;
-      -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-      -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-      box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-  }
-
-  header.sticky ul{
-    padding-top: 20px;
-  }
+ .logo{
+     padding-left: 20px;
+ }
 
 
   #desktop-menu{
@@ -187,7 +171,7 @@ li{
 .bar{
 	height: 5px;
 	width: 100%;
-	background-color: #789fa5;
+	background-color: #789fa5 !important;
 	display: block;
 	border-radius: 5px;
 	transition: 0.3s ease;
@@ -199,14 +183,16 @@ li{
 	transform: translateY(4px);
 }
 .nav li a{
-	color: #fff;
+    color: #fff;
 	text-decoration: none;
 }
 .nav li a:hover{
 	font-weight: bold;
 }
 .nav li{
-	list-style: none;
+    list-style: none;
+    
+    text-align: center;
 	padding: 16px 0;
 }
 .nav{
@@ -220,7 +206,7 @@ li{
 	left: 0;
     right: 0;
 	position: absolute;
-    background-color: rgb(10, 25, 47);;
+    background-color: rgb(10, 25, 47);
 }
 .menu-bg{
 	z-index: 1;

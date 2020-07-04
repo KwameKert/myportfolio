@@ -83,3 +83,15 @@ header.sticky ul{
     width: 75%;
     background: #fff;
   }
+
+
+  .social-buttons:hover {
+    color: #fff;
+    background-color: transparent !important ;
+    border-color: #789fa5;
+}
+
+/* .social-buttons p{
+    color: #fff;
+    background-color: transparent;
+} */
