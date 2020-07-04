@@ -12,7 +12,7 @@ body{
     min-height: 200vh;
     background-image: url('../img/background.jpg') !important;
    
-   
+     
 }
 
 p{
@@ -97,7 +97,10 @@ header.sticky ul{
     border-color: #789fa5;
 }
 
-/* .social-buttons p{
-    color: #fff;
-    background-color: transparent;
-} */
+@media only screen and (max-width: 600px) {
+
+    #menu-bar{
+        background-color:#fff  !important;
+    }
+
+}
