@@ -37,10 +37,10 @@
                                 <p class="light-text">July 2019  - December 2019</p>
                                 <ul>
                                     <li class="my-list">
-                                        <p class="light-text">Worked with a team of engineers a video steaming web and mobile application for <a href="">donsarena</a>, a boxing company in Ghana.</p>
+                                        <p class="light-text">Worked with a team of engineers a video steaming web and mobile application for Donsarena, a boxing company in Ghana.</p>
                                     </li>
                                     <li class="my-list">
-                                        <p class="light-text">Led a team to design and  build a  comprehensive food delivery system for <a href="">foodies</a>, a local company in Ghana</p>
+                                        <p class="light-text">Led a team to design and  build a  comprehensive food delivery system for Foodies, a Food Delivery Company in Ghana</p>
                                     </li>
                                     
                                 </ul>
@@ -69,7 +69,6 @@
                                     
                                 </ul>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
                           </div>
                     </div>
                 </div>

@@ -132,47 +132,10 @@ li{
     list-style: none;
 }
 
-.links a{
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none !important;
-    letter-spacing: 2px;
-    color: #6c7fc5;
-    font-weight: 600;
-    transition: 0.6s;
-}
-
-.links a:hover{
-    color: #fff;
-}
-
-.links:after {
-    content: '';
-    display: block;
-    margin: auto;
-    height: 3px;
-    color:#b6bedc;
-    width: 0px;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
-  }
-  .links:hover:after {
-    width: 75%;
-    background: #fff;
-  }
 
 
 
 
-    .btn-outline-primary:hover {
-    color: #fff;
-    background-color: #789fa5;
-    border-color:  #789fa5;
-}
-  .btn-outline-primary{
-    color: #789fa5;
-    border-color:   #789fa5;
-}
 
 
 

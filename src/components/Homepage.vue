@@ -42,7 +42,7 @@ export default {
     margin-top: 50px;
     width: 50%;
     text-align: justify;
-    color: #b7babd;
+ 
 
   }
 
