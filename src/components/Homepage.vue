@@ -6,7 +6,7 @@
             <h4 class="headline">I create things for the web</h4>
             <p class=" intro  mb-3" >I'm a software engineer living in Accra, Ghana. I build applications to solve  problems with  the aim of making the world a better place.</p>
             
-            <a  href="https://www.linkedin.com/in/kertice-asante-aa4224173/" target="blank" class="btn btn-outline-primary" style="margin-left: 0px;">Connect with me</a>
+            <a  href="#contact"  class="btn btn-outline-primary" style="margin-left: 0px;">Connect with me</a>
         </div>
     </section>
 </template>

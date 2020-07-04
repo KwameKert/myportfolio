@@ -16,6 +16,7 @@
             <img src="@/assets/img/github.svg" width="30px" height="30px" alt="">
             &nbsp;&nbsp;<p class="m-2"> Follow me </p></a>
             <a href="https://www.linkedin.com/in/kertice-asante-aa4224173/" target="blank" class="btn btn-outline-primary social-buttons"> <img src="@/assets/img/linkedin.svg" alt="">  &nbsp;&nbsp; <p class="m-2">Add Connection</p></a>
+            <a href="https://twitter.com/_kwamekert" target="blank" class="btn btn-outline-primary social-buttons"> <img src="@/assets/img/twitter.svg" alt="">  &nbsp;&nbsp; <p class="m-2">Follow me</p></a>
 
         </div>
         </section>
