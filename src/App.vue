@@ -20,6 +20,9 @@ import Footer from './components/Footer.vue';
 import Homepage from './components/Homepage.vue';
 import Contact from './components/Contact.vue';
 
+
+
+
 export default {
   name: 'App',
   components: {
@@ -30,29 +33,12 @@ export default {
     Projects,
     Contact,
     Footer
-  }
+  },
+ 
 }
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-*{
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    color: #fff;
-}
-
-body{
-    min-height: 200vh;
-    background-color:rgb(10, 25, 47);
-}
-
-p{
-
-    font-size: 17px;
-}
 
 .section-content {
     padding-top: 110px;

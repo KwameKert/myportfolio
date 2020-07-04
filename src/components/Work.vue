@@ -85,7 +85,8 @@ export default {
     name: 'Work',
       data(){
         return {
-            activeItem: 'seso'
+            activeItem: 'seso',
+            nice: 'kofi'
         }
     },
     methods: {

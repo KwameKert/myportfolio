@@ -9,7 +9,8 @@
             <li class="links"><a href="#work">Experience</a></li>
             <li class="links"><a href="#projects">Projects</a></li>
             <li class="links"><a href="#contact">Contact</a></li>
-            <li ><a  href="../../../assets/cv.pdf" class="btn btn-outline-primary">Resume</a></li>
+            <li ><a href="https://drive.google.com/file/d/1Klxzquh2yiHwwskMEF_2hmWasswrkmSm/view?usp=sharing" target="blank" class="btn btn-outline-primary">Resume</a></li>
+            <li><a @click="darkThemeSwitch" class="btn btn-primary">click</a></li>
         </ul>
 
      </header>
@@ -60,7 +61,9 @@ export default {
     },
     data(){
         return {
-            isActive: false
+            isActive : false,
+
+            isDark : true
         }
     },
     methods: {
@@ -72,7 +75,19 @@ export default {
                header.classList.toggle("sticky",window.scrollY > 0);
             },
             darkThemeSwitch(){
-               
+              
+               this.isDark = !this.isDark;
+              if(!this.isDark){
+                   let link = document.getElementById("link");
+                  link.removeAttribute("href", "dark.css");
+               link.setAttribute("href", "css/light.css");
+               console.log("light")
+              }else{
+                  console.log("dark")
+                   let link = document.getElementById("link");
+                  link.removeAttribute("href", "css/light.css");
+                  link.setAttribute("href", "css/dark.css");
+              }
             }
             
     }
@@ -96,18 +111,10 @@ header{
     align-items: center;
     padding: 30px 120px;
     z-index: 100000;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
-header .logo {
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    font-size: 2em;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
+
 
 header ul {
     position: relative;
@@ -167,17 +174,7 @@ li{
     border-color:   #789fa5;
 }
 
-  header.sticky{
-      padding: 5px 120px;
-      background-color: rgb(10, 25, 47);;
-      -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-      -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-      box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-  }
 
-  header.sticky ul{
-    padding-top: 20px;
-  }
 
 @media only screen and (max-width: 600px) {
   /* body {
