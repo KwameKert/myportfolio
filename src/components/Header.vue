@@ -21,7 +21,7 @@
         <div id="menu-bar">
             <div class="row">
                 <div class="col-3">
-                <div id="menu" @click="changeMenu()" v-bind:class="{change: isActive}">
+                <div id="menu" @click="changeMenu()" v-bind:class="{change: isActive}" ref="myBtn">
 				<div id="bar1" class="bar"></div>
 				<div id="bar2" class="bar"></div>
 				<div id="bar3" class="bar"></div>
@@ -36,10 +36,10 @@
             <div class="row">
                 <div class="col-12 ">
         <ul class="nav" id="nav" v-bind:class="{change: isActive}">
-            <li class="links"><a href="#about">About</a> </li>
-            <li class="links"><a href="#work">Experience</a></li>
-            <li class="links"><a href="#projects">Projects</a></li>
-            <li class="links"><a href="#contact">Contact</a></li>
+            <li class="links" @click="closeMenu"><a href="#about">About</a> </li>
+            <li class="links" @click="closeMenu"><a href="#work">Experience</a></li>
+            <li class="links" @click="closeMenu"><a href="#projects">Projects</a></li>
+            <li class="links" @click="closeMenu"><a href="#contact">Contact</a></li>
             <li ><button  class="btn btn-outline-primary">Resume</button></li>
              <li class="day-night" @click="darkThemeSwitch">
                 <img src="@/assets/img/moon.svg" alt="" v-if="!isDark">  <img src="@/assets/img/sun.svg" alt="" v-if="isDark"> 
@@ -77,6 +77,7 @@ export default {
     methods: {
             changeMenu: function(){
                 this.isActive = !this.isActive;
+                //console.log("closed");
             },
             handleScroll: function(){
                var header = document.querySelector("header");
@@ -85,7 +86,9 @@ export default {
             darkThemeSwitch(){
               
                this.isDark = !this.isDark;
+               this.closeMenu();
               if(!this.isDark){
+                  
                    let link = document.getElementById("link");
                   link.removeAttribute("href", "dark.css");
                link.setAttribute("href", "css/light.css");
@@ -96,6 +99,10 @@ export default {
                   link.removeAttribute("href", "css/light.css");
                   link.setAttribute("href", "css/dark.css");
               }
+            },
+             closeMenu() {
+               const elem = this.$refs.myBtn
+            elem.click()
             }
             
     }

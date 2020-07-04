@@ -44,7 +44,7 @@
                     <div class="col-md-5">
                         <h4>Admission  System</h4>
                         <p class="light-text">
-                            This system will help the admission faculty of univerities to  manage the status of applications. The applicants will also be able to keep track of their applications. 
+                            This system will help the admission faculty of universities to  manage the status of applications. The applicants will also be able to keep track of their applications. 
                         </p>
                     
                         <div >
