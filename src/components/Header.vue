@@ -9,6 +9,7 @@
             <li class="links"><a href="#work">Experience</a></li>
             <li class="links"><a href="#projects">Projects</a></li>
             <li class="links"><a href="#contact">Contact</a></li>
+            
             <li ><a href="https://drive.google.com/file/d/1U219irCxkChVaQvvhFhErACk0V0g6U0O/view?usp=sharing" target="blank" class="btn btn-outline-primary">Resume</a></li>
             <li class="day-night" @click="darkThemeSwitch">
                 <img src="@/assets/img/moon.svg" alt="" v-if="!isDark">  <img src="@/assets/img/sun.svg" alt="" v-if="isDark"> 
