@@ -49,6 +49,11 @@ body{
     background-color:rgb(10, 25, 47);
 }
 
+p{
+
+    font-size: 17px;
+}
+
 .section-content {
     padding-top: 110px;
 }

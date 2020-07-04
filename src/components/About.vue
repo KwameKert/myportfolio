@@ -16,44 +16,87 @@
             </div>
 
                 <div class="row mt-3">
-                         <div class="col-md-6 col-sm-12">
 
-                              <div class="tech-stack">
-                        <ul>
-                            <li class="stack-heading">Languages</li>
+                    <div class="col-md-10 col-sm-12 stack pl-0">
+                        <ul class="nav stack-pills mb-1" id="pills-tab" role="tablist">
+
+                            <li class="nav-item">
+                                <a class="stack-link " id="pills-home-tab" data-toggle="pill" role="tab" aria-controls="pills-home" aria-selected="true" @click.prevent="setActive('languages')" :class="{ active: isActive('languages') }" >Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="stack-link "  id="pills-profile-tab" data-toggle="pill"  role="tab" aria-controls="pills-profile" aria-selected="false"  @click.prevent="setActive('frameworks')" :class="{ active: isActive('frameworks') }" >Frameworks</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="stack-link" id="pills-contact-tab" data-toggle="pill" @click.prevent="setActive('tools')" :class="{ active: isActive('tools') }" role="tab" aria-controls="pills-contact" aria-selected="false">Tools</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="stack-link" id="pills-contact-tab" data-toggle="pill" @click.prevent="setActive('databases')" :class="{ active: isActive('databases') }" role="tab" aria-controls="pills-contact" aria-selected="false">Databases</a>
+                            </li>
+                        </ul>
+
+
+                <div class="tab-content pl-3 " id="pills-tabContent">
+
+                    <div class="tab-pane fade"  role="tabpanel" aria-labelledby="pills-home-tab" :class="{ 'active show': isActive('languages') }"> 
+                        <div class="stacks">
+                            <ul>
                             <li>Java</li>
                             <li>Javascript</li>
                             <li>Python</li>
+                         </ul>
+                         <ul class="ml-5">
                             <li>PHP</li>
                             <li>Node.js</li>
                         </ul>
+                        </div>
+                         
+                    </div>
+
+                    <div class="tab-pane fade "  role="tabpanel" aria-labelledby="pills-profile-tab"    :class="{ 'active show': isActive('frameworks') }">
+                        <div class="stacks">
                         <ul>
-                            <li class="stack-heading">Frameworks</li>
                             <li>Spring boot</li>
                             <li>Angular</li>
                             <li>Vue</li>
+                         </ul>
+                         <ul class="ml-5"> 
                             <li>Flask</li>
                             <li>Laravel </li>
                             <li>Wordpress</li>
                         </ul>
+                        </div>
+                        
+                    </div>
 
-                        <ul>
-                            <li class="stack-heading">Tools</li>
+                    <div class="tab-pane fade" :class="{ 'active show': isActive('tools') }" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="stacks">
+                         <ul>
                             <li>Git</li>
                             <li>Heroku</li>
                             <li>Firebase</li>
+                         </ul>
+                         <ul class="ml-5">
                             <li>Docker</li>
                             <li>Postman</li>
                             <li>Chrome Dev tools</li>
                         </ul>
-                        
+                        </div>
+                         
+                    </div>
+
+                    <div class="tab-pane fade stacks" :class="{ 'active show': isActive('databases') }" role="tabpanel" aria-labelledby="pills-contact-tab">
+
                         <ul>
-                            <li class="stack-heading">Databases</li>
                             <li>Mongo DB</li>
                             <li>MySQL</li>
                         </ul>
-                     </div>
-                         </div>
+                    </div>
+                </div>
+                    </div>
+            
                      </div>
           
         </div>
@@ -63,11 +106,55 @@
 
 <script>
 export default {
-    name: 'About'
+    name: 'About',
+     data(){
+        return {
+            activeItem: 'languages'
+        }
+    },
+    methods: {
+            changeMenu: function(){
+                this.isActive = !this.isActive;
+            },
+            isActive : function(menuItem) {
+                return this.activeItem === menuItem
+            },
+            setActive (menuItem) {
+                this.activeItem = menuItem
+            
+            }
+
+    }
 }
 </script>
 
-<style>
+<style >
+
+.stacks{
+
+    display: flex !important;
+}
+
+.stack-link{
+    cursor: pointer;
+}
+
+ .stack-pills {
+    color:#b7babd !important;
+    background-color: transparent;
+    transition: 0.6s;
+
+}
+
+.stack-pills .stack-link.active {
+    background-color: transparent !important;
+}
+
+.stack-pills .stack-link.active, .stack-pills .show>.stack-link {
+    color: #fff;
+    border-bottom: 5px #789fa5 solid;
+    transition: 0.6s;
+}
 
 
 .heading {
@@ -125,6 +212,12 @@ export default {
     font-size: 18px;
     letter-spacing: 2px;
     color:#fff !important;
+}
+
+.stacks>ul>li:before{
+    content: "♦  ";
+    padding-right: 10px;
+    color: #789fa5;
 }
 
 </style>

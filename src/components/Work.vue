@@ -58,10 +58,10 @@
                                         and track their medical expenses.</p>
                                     </li>
                                     <li class="my-list">
-                                        <p class="light-text"> Worked with a team to build a Human Resource Management System for <a href="">NTL</a></p>
+                                        <p class="light-text"> Worked with a team to build a Human Resource Management System for a client. </p>
                                     </li>
                                     <li class="my-list">
-                                        <p class="light-text">Maintained the university's website using wordpress and developed a wordpress plugin. <a href="">NTL</a></p>
+                                        <p class="light-text">Maintained the university's website using wordpress and developed a wordpress plugin. </p>
                                     </li>
                                     <li class="my-list">
                                         <p class="light-text">Interfaced with clients  providing technological expertise</p>
@@ -101,18 +101,11 @@ export default {
             }
 
     }
-//   methods:{
-//   	// isActive : function(menuItem) {
-//     //   return this.activeItem === menuItem
-//     // },
-//     // setActive (menuItem) {
-//     //   this.activeItem = menuItem
-//     // }
-//   }
 }
 </script>
 
-<style >
+
+<style  >
 .nav-pills {
     color:#b7babd !important;
     background-color: transparent;

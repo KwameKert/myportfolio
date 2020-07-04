@@ -5,7 +5,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import './registerServiceWorker'
 
-
+//import jquery from 'jquery';
 
 Vue.config.productionTip = false
 
