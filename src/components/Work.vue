@@ -8,7 +8,8 @@
                    
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="nav-link " id="v-pills-home-tab" data-toggle="pill" href="#seso" role="tab" aria-controls="v-pills-home" aria-selected="true" @click.prevent="setActive('seso')" :class="{ active: isActive('seso') }"  >Seso Global</a>
-
+ <a class="nav-link " id="v-pills-home-tab" data-toggle="pill" href="#thinkSopht" role="tab" aria-controls="v-pills-home" aria-selected="true" @click.prevent="setActive('thinkSopht')" :class="{ active: isActive('thinkSopht') }"  >thinkSopht Labs</a>
+  <a class="nav-link " id="v-pills-home-tab" data-toggle="pill" href="#gtucSrc" role="tab" aria-controls="v-pills-home" aria-selected="true" @click.prevent="setActive('gtucSrc')" :class="{ active: isActive('gtucSrc') }"  >GTUC SRC</a>
                         <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#visual_insights" role="tab" aria-controls="v-pills-profile" aria-selected="false" @click.prevent="setActive('visual_insights')" :class="{ active: isActive('visual_insights') }">Visual Insights</a>
 
                         <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#gtuc_software" role="tab" aria-controls="v-pills-messages" aria-selected="false"  @click.prevent="setActive('gtuc_software')" :class="{ active: isActive('gtuc_software') }">GTUC Software Unit</a>
@@ -20,8 +21,25 @@
                     <div class="col-md-6 col-sm-5">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade " id="seso" role="tabpanel" aria-labelledby="v-pills-home-tab" :class="{ 'active show': isActive('seso') }"  >
+                                
+                                  <h4>Software Test Engineer  @Seso</h4>
+                                <p class="light-text">August 2020  - August 2021</p>
+                                <ul>
+                                    <li class="my-list">
+                                        <p class="light-text"> Testing platforms for bugs and suggesting fixes to enhance user experience. 
+                                        </p>
+                                    <li class="my-list">
+                                        <p class="light-text">Build user designs for the platforms.</p>
+                                    </li>
+                                       <li class="my-list">
+                                        <p class="light-text"> Communicate and collaborate with muiti-disciplinary teams of engineers, designers, and stakeholders on a daily basis. 
+</p>
+                                    </li>
+
+                                </ul>
+                                
                                 <h4>Software Engineer (Intern) @Seso</h4>
-                                <p class="light-text">September 2019  - Present</p>
+                                <p class="light-text">September 2019  - August 2020</p>
                                 <ul>
                                    
                                     <li class="my-list">
@@ -31,7 +49,57 @@
                                         <p class="light-text"> Work with a variety of different languages, platforms and  frameworks systems such as Java, Springboot, Docker, Heroku and Angular .</p>
                                     </li>
                                 </ul>
+
+                               
                             </div>
+
+                                <div class="tab-pane fade " id="thinkSopht" role="tabpanel" aria-labelledby="v-pills-home-tab" :class="{ 'active show': isActive('thinkSopht') }"  >
+                                
+                                  <h4>Backend Engineer  @thinkSopht</h4>
+                                <p class="light-text">July 2020  - December 2021</p>
+                                <ul>
+                                    <li class="my-list">
+                                        <p class="light-text"> Worked with a team of engineers to build a delivery service platform that could assign riders to customers. I built the backend and also the admin dashboard to manage activities on the platform.
+                                        </p>
+                                    <li class="my-list">
+                                        <p class="light-text">I built a Point of Sales system that could manage inventory and calculate commissions made by sales persons. 
+</p>
+                                    </li>
+                                       <li class="my-list">
+                                        <p class="light-text"> During my time at thinkSoft Labs I have been able to work with the following technologies: Nodejs, MongoDb, Postgresql, AWS EC2, Java, SpringBoot, Angular, and Jest.
+
+</p>
+                                    </li>
+
+                                </ul>
+           
+                            </div>
+
+                               <div class="tab-pane fade " id="gtucSrc" role="tabpanel" aria-labelledby="v-pills-home-tab" :class="{ 'active show': isActive('gtucSrc') }"  >
+                                
+                                  <h4>Electoral Commissioner, Chairman  @GTUC SRC</h4>
+                                <p class="light-text">April 2020  - September 2020</p>
+                                <ul>
+                                    <li class="my-list">
+                                        <p class="light-text"> Successfully led a five member committee in creating and providing backend support to the school’s first ever online election platform necessitated by the COVID-19 pandemic. This proposed and implemented software was able to integrate seamlessly with the Student Information Portal to enable students to vote remotely.
+
+                                        </p>
+                                    <li class="my-list">
+                                        <p class="light-text">Chaired a 10 member committee to vet qualified aspirants of Student Representative Council positions.
+</p>
+                                    </li>
+                                       <li class="my-list">
+                                        <p class="light-text"> Collaborated with the management of the university and students to conduct a successful election. 
+
+</p>
+                                    </li>
+
+                                </ul>
+           
+                            </div>
+
+                            
+
                             <div class="tab-pane fade" id="visual_insights" role="tabpanel" aria-labelledby="v-pills-profile-tab" :class="{ 'active show': isActive('visual_insights') }" >
                                 <h4>Full Stack Developer (Remote) @Visual_Insights</h4>
                                 <p class="light-text">July 2019  - December 2019</p>

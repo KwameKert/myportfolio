@@ -2,7 +2,59 @@
     <section >
         <div class="container  section-content" id="projects">
             <h3 class="heading"> Featured Projects</h3>
-            <div class="row">
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3>Property Management System</h3>
+                        <p class="light-text">
+                         This system will help property managers manage their properties efficienty.
+                        
+                     </p>
+                      <div>
+                        <span class="languages">Angular</span>   
+                        <span class="languages">Spring Boot</span>  
+                        <span class="languages">MySQL</span>  
+                         <span> <a href="https://github.com/KwameKert/propertymanagement-client" target="blank" style="color:white"> Repo</a></span>
+                    </div>
+                 
+                </div>
+            </div>
+
+              <div class="card mb-3">
+                <div class="card-body">
+                    <h3>Admission  System</h3>
+                        <p class="light-text">
+                            This system will help the admission faculty of universities to  manage the status of applications. The applicants will also be able to keep track of their applications. 
+                        
+                     </p>
+                      <div>
+                        <span class="languages">Angular</span>   
+                        <span class="languages">Spring Boot</span>  
+                        <span class="languages">MySQL</span>  
+                         <span> <a href="https://github.com/KwameKert/admissionportal-client" target="blank" style="color:white"> Repo</a></span>
+                    </div>
+                 
+                </div>
+            </div>
+
+  <div class="card">
+                <div class="card-body">
+                    <h3>Property  System (Proposal)</h3>
+                        <p class="light-text">
+                         This system will help property managers manage property documents efficienty.
+                        
+                     </p>
+                      <div>
+                        <span class="languages">Angular</span>   
+                         <span> <a href="https://github.com/KwameKert/nedbank-proposal" target="blank" style="color:white"> Repo</a></span>
+                    </div>
+                 
+                </div>
+            </div>
+
+
+
+            <!-- <div class="row">
                
                 <div class="col-md-9">
                     <img src="@/assets/img/property.png" class="img-fluid project-image" alt="">
@@ -102,7 +154,7 @@
                    
                      
                 </div>
-            </div>
+            </div> -->
 
         </div>
         <div style="margin-top: 300px"></div>
@@ -143,5 +195,10 @@ export default {
 
 .project-image:hover{
      opacity: 1;
+}
+
+.card {
+        border: 1px solid rgb(48 60 85);
+
 }
 </style>

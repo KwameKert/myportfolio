@@ -5,8 +5,8 @@
                 <div class="col-md-6 col-sm-12">
                     <h3 class="heading">About me</h3>
                     <p class="light-text">Hello! I am Kertice, a software engineer based in Accra, Ghana</p>
-                     <p class="light-text">I love building things, most of them work on computers. I'm very passionate about quality software. I believe technology is one of the best things that happened to humanity and it can be improved upon. </p>
-                     <p class="light-text">During my third and final year in the university, I did full-time internships with Ghana Technology University College (GTUC) software unit and Seso Global. I have worked on challenging projects with different teams during my internships. </p>
+                     <p class="light-text">I love building things, most of them work on computers. I'm very passionate about quality software. I believe technology is one of the best things that happened to humanity and it can be improved upon. I also write technical <a href="https://kwame.hashnode.dev/" style="color: white; margin:0px; text-decoration:underline">blogs</a>. </p>
+                     <p class="light-text">During my third and final year in the university, I did full-time internships with Ghana Technology University College (GTUC) software unit and Seso Global. I have worked on challenging projects with different teams during my internships and professional jobs. </p>
                      <p class="light-text">Here are a few technologies I've been working with recently:</p>
                           <div class="row mt-3">
 
@@ -14,7 +14,7 @@
                         <ul class="nav stack-pills mb-1" id="pills-tab" role="tablist">
 
                             <li class="nav-item">
-                                <a class="stack-link " id="pills-home-tab" data-toggle="pill" role="tab" aria-controls="pills-home" aria-selected="true" @click.prevent="setActive('languages')" :class="{ active: isActive('languages') }" >Home</a>
+                                <a class="stack-link " id="pills-home-tab" data-toggle="pill" role="tab" aria-controls="pills-home" aria-selected="true" @click.prevent="setActive('languages')" :class="{ active: isActive('languages') }" >Languages</a>
                             </li>
 
                             <li class="nav-item">

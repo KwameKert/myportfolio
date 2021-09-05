@@ -3,8 +3,8 @@
         <div class="container ">
             <h5>Hi, my name is</h5>
             <h2 class="name">Kertice Asante</h2>
-            <h4 class="headline">I create things for the web</h4>
-            <p class=" intro  mb-3" >I'm a software engineer living in Accra, Ghana. I build applications to solve  problems with  the aim of making the world a better place.</p>
+            <h4 class="headline">I build stuff using computers </h4>
+            <p class=" intro  mb-3" >I'm a software engineer currently living in Accra, Ghana. I build applications to solve  problems with  the aim of making the world a better place.</p>
             
             <a  href="#contact"  class="btn btn-outline-primary" style="margin-left: 0px;">Connect with me</a>
         </div>
